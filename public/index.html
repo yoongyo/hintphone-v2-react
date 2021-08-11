@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Hint Phone</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+  </head>
+  <body style="background-color: #548CA8;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  
+    <script>
+      var uploadField = document.getElementById("fileupload");
+      // uploadField.onchange = function() {
+      //     if(this.files[0].size > 1){
+      //       alert("파일 사이즈가 10mb 이상은 업로드가 불가합니다.");
+      //       this.value = "";
+      //     };
+      // };  
+      
+    </script>
+    <script>
+      ClassicEditor
+      .create( document.querySelector( '#textHint1' ) )
+      .catch( error => {
+          console.error( error );
+      } );
+  </script>
+</html>
